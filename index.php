@@ -186,6 +186,92 @@
 		</div>
 	</div>
 
+
+	<div class="services">
+		<div class="container">
+			<div class="text-center">
+				<h2>Participez aux nos cours et evenements</h2>
+			</div>
+			<div class="col-md-12 wow fadeInDown text-center text-uppercase" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+				<p>Vous pouvez participer aux prochains cours en completant le formulair ci-dessus : </p>
+
+			</div>
+
+			<div class="col-md-4 col-md-offset-4 wow fadeInDown text-center text-uppercase" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+				<form id="signupEvents">
+
+					<div class="btn-gamp">
+						<label for="nom">Nom complet</label>
+						<input type="text" class="form-control" id="nom" placeholder="Introduissez votre nom complet">
+					</div>
+
+					<div class="btn-gamp">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="Introduissez votre email">
+					</div>
+
+					<div class="btn-gamp">
+						<label for="cours">Cours</label>
+						<select class="form-control" id="cours" >
+							<option value="*">Selectez un cours</option>
+							<option value="web">HTML/CSS/Javascript</option>
+							<option value="scratch">Scratch</option>
+							<option value="python">Python</option>
+							<option value="ruby">Ruby</option>
+							<option value="arduino">Arduino</option>
+							<option value="rasberry">Rasberry PI</option>
+						</select>
+					</div>
+
+					<div class="btn-gamp">
+						<label for="cours">Disponibilité</label>
+						<select class="form-control" id="disponibilite" >
+							<option value="*">Selectez une disponibilité</option>
+							<option value="sam_mat">Samedi matin</option>
+							<option value="sam_mid">Samedi midi</option>
+							<option value="sam_apr">Samedi apres-midi</option>
+							<option value="dim_mat">Dimanche matin</option>
+							<option value="dim_mid">Dimanche midi</option>
+							<option value="dim_apr">Dimanche apres-midi</option>
+						</select>
+					</div>
+
+					<div class="btn-gamp">
+						<label for="age">Age</label>
+						<select class="form-control" id="age" >
+							<option value="*">Selectez l'age de votre enfant</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+						</select>
+					</div>
+
+					<div id="divSubmitEvent" class="btn-gamp">
+						<a href="javascript:;" id="submitEvent" >Participer </a>
+					</div>
+
+					<div id="divFormMessage" class="btn-gamp">
+						<p id="formMessage">Merci pour votre inscription !</p>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+
 	<section class="action">
 		<div class="container">
 			<div class="left-text hidden-xs">
@@ -197,6 +283,7 @@
 			<div class="right-image hidden-xs"><video src="https://youtu.be/Ct4apcyYECs"></video></div>
 		</div>
 	</section>
+
 
 	<div class="gallery">
 		<div class="text-center">
@@ -273,6 +360,7 @@
 					</div>
 					<div class="btn-gamp">
 						<a type="submit" class="btn btn-default">souscrire</a>
+
 					</div>
 
 			</div>
@@ -307,10 +395,49 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>wow = new WOW({}).init();</script>
+
+	<script>
+
+		(function ($) {
+
+			function sendParticipationEmail(infos){
+				$.ajax({
+                    type: "POST",
+                    url: "email.php",
+                    data: {"data": infos},
+                    dataType: "text",
+                    success: function(data) {
+                      if(data === "ok")
+                        return 1;
+                      else
+                        return 0;
+                    }
+				});
+			}
+
+			$("#submitEvent").click(function(){
+
+				var frm = $('#signupEvents');
+
+				var values = {};
+				for(i=0; i<5; i++){
+					values[i] = frm[0][i].value;
+				};
+
+				if(sendParticipationEmail(values)){
+				    $('#formMessage').show().delay(5000).fadeOut('slow');
+			    }
+
+			});
+
+		})(jQuery);
+
+	</script>
 
 </body>
 </html>
