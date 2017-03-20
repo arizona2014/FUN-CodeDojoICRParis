@@ -1319,3 +1319,23 @@ ul.social-network li a {
 	font-size:12px;
 	font-weight:600;
 }
+
+#divSubmitEvent {
+    padding-top: 20px;
+}
+
+#submitEvent {
+    text-decoration:none;
+    height: 45px;
+    line-height: 45px;
+}
+
+#divFormMessage {
+    float:left; width:100%;
+    padding-top: 40px;
+}
+
+#formMessage {
+    display: none;
+    color:forestgreen;
+}
