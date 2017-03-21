@@ -64,7 +64,7 @@
 
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="img/kids2.png" class="img-responsive" alt="">
+						<img src="img/kids2.png" class="img-responsive slide-image" alt="">
 						<div class="carousel-caption">
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
 								<h2><span>Enfants et parents</span></h2>
@@ -88,7 +88,7 @@
 				    </div>
 
 				    <div class="item">
-						<img src="img/kids5.png" class="img-responsive" alt="">
+						<img src="img/kids5.png" class="img-responsive slide-image" alt="">
 						<div class="carousel-caption">
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
 								<h2>Mentors</h2>
@@ -111,7 +111,7 @@
 						</div>
 				    </div>
 				    <div class="item">
-						<img src="img/kids3.jpg" class="img-responsive" alt="">
+						<img src="img/kids3.jpg" class="img-responsive slide-image" alt="">
 						<div class="carousel-caption">
 							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
 								<h2>Benevoles</h2>
@@ -152,7 +152,7 @@
 				<h2>Qu'est-ce que c'est CoderDojo?</h2>
 				<div class="col-sm-12 col-md-10 col-md-offset-1">
 					<p>CoderDojo a commencé à l'école de James Whelton à Cork en 2011. Les clubs sont dirigés par des bénévoles, pour les enfants de 7 à 17 ans ou ils peuvent decouvrir comment coder. En Septembre 2014, il y avait plus de 500 CoderDojos dans 50 pays.</p>
-					<iframe width="80%" height="300"  src="https://www.youtube.com/embed/K4qsihAkTe4" frameborder="0" allowfullscreen></iframe>
+					<iframe class="youtube" height="300"  src="https://www.youtube.com/embed/K4qsihAkTe4" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<!-- <div class="col-md-6 col-sm-6 col-xs-6">
 					<div class="btn-gamp"><a href="#">Learn More</a></div>
@@ -338,7 +338,7 @@
 			</div>
 
 			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-				<div class="text-center">
+				<div >
 					<h4>Nos cours</h4>
 					<ul class="sidebar-gallery">
 						<li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
@@ -377,7 +377,6 @@
 						<li><a href="https://www.facebook.com/Coderdojo-ICR-Paris-1257916664328650/" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="https://twitter.com/dojo_icr_paris" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://github.com/CoderdojoICRParis" class="github tool-tip" title="Github"><i class="fa fa-github"></i></a></li>
-						<li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
 					</ul>
 				</div>
 			</div>
