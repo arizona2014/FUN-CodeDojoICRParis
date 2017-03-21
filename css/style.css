@@ -1339,3 +1339,79 @@ ul.social-network li a {
     display: none;
     color:forestgreen;
 }
+
+.youtube {
+    width: 80%;
+}
+
+@media (max-width: 425px) {
+
+    /* INDEX PAGE */
+
+    p {
+        text-align: justify !important;
+        padding:10px 0;
+    }
+
+    .slider img {
+        height:200px !important;
+    }
+
+    .carousel-caption {
+        top: calc(50% - 100px) !important;
+    }
+
+    .youtube {
+        width: 100%;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-network {
+        width: 95%;
+        text-align: end;
+    }
+
+    #submitEvent {
+        width:100% !important;
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+
+    .about {
+        padding: 20px 0;
+    }
+
+    footer .btn-gamp a  {
+        width:100% !important;
+    }
+
+    footer h4 {
+        padding: 15px 0 0;
+    }
+
+    /* INDEX PAGE */
+
+    /* ABOUT PAGE */
+
+    .single-profile-top, .single-profile-bottom {
+        margin:20px 0;
+    }
+
+    .sinlge-skill p {
+        text-align: center !important;
+    }
+
+    .nav-tabs > li {
+        width: 100% !important;
+    }
+
+    /* ABOUT PAGE */
+
+
+}
