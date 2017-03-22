@@ -1335,9 +1335,14 @@ ul.social-network li a {
     padding-top: 40px;
 }
 
-#formMessage {
+#formMessageOK {
     display: none;
     color:forestgreen;
+}
+
+#formMessageKO {
+    display: none;
+    color:red;
 }
 
 .youtube {
