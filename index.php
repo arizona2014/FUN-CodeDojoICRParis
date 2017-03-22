@@ -215,7 +215,7 @@
 					<div class="btn-gamp">
 						<label for="cours">Cours</label>
 						<select class="form-control" id="cours" >
-							<option value="*">Selectez un cours</option>
+							<option value="">Selectez un cours</option>
 							<option value="web">HTML/CSS/Javascript</option>
 							<option value="scratch">Scratch</option>
 							<option value="python">Python</option>
@@ -228,7 +228,7 @@
 					<div class="btn-gamp">
 						<label for="cours">Disponibilité</label>
 						<select class="form-control" id="disponibilite" >
-							<option value="*">Selectez une disponibilité</option>
+							<option value="">Selectez une disponibilité</option>
 							<option value="sam_mat">Samedi matin</option>
 							<option value="sam_mid">Samedi midi</option>
 							<option value="sam_apr">Samedi apres-midi</option>
@@ -241,7 +241,7 @@
 					<div class="btn-gamp">
 						<label for="age">Age</label>
 						<select class="form-control" id="age" >
-							<option value="*">Selectez l'age de votre enfant</option>
+							<option value="">Selectez l'age de votre enfant</option>
 							<option value="7">7</option>
 							<option value="8">8</option>
 							<option value="9">9</option>
@@ -261,7 +261,8 @@
 					</div>
 
 					<div id="divFormMessage" class="btn-gamp">
-						<p id="formMessage">Merci pour votre inscription !</p>
+						<p id="formMessageOK">Merci pour votre inscription !</p>
+						<p id="formMessageKO"></p>
 					</div>
 
 				</form>
@@ -411,10 +412,13 @@
                     data: {"data": infos},
                     dataType: "text",
                     success: function(data) {
-                      if(data === "ok")
-                        return 1;
-                      else
-                        return 0;
+                      if(data === "ok"){
+                        $('#formMessageOK').show().delay(5000).fadeOut('slow');
+                      } else if(data === "ko-insert") {
+                        $('#formMessageKO').html("Il y a une probleme avec l'insertion dans la base!").show().delay(5000).fadeOut('slow');
+                      } else if(data === "ko-email") {
+                        $('#formMessageKO').html("L'adresse email existe dejà !").show().delay(5000).fadeOut('slow');
+                      }
                     }
 				});
 			}
@@ -423,14 +427,18 @@
 
 				var frm = $('#signupEvents');
 
+                var err = 0;
 				var values = {};
 				for(i=0; i<5; i++){
 					values[i] = frm[0][i].value;
+					if(values[i].trim() === "")
+					    err = 1;
 				};
 
-				if(sendParticipationEmail(values)){
-				    $('#formMessage').show().delay(5000).fadeOut('slow');
-			    }
+                if(err === 0)
+				    sendParticipationEmail(values);
+				else
+				    $('#formMessageKO').html("Merci de saisir tous le champs de formulaire !").show().delay(5000).fadeOut('slow');
 
 			});
 
