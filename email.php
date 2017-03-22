@@ -7,12 +7,23 @@
 		$availability = $_POST['data'][3];
 		$age = $_POST['data'][4];
 
-        $con = mysqli_connect('185.98.131.94','coder812253','h5tquu9mgw','coder812253') or die("Some error occurred during connection " . mysqli_error($con));
-        $strSQL = "INSERT INTO participants VALUES( null, '$name', '$email', '$tech', '$availability', '$age', 1)";
-        if(mysqli_query($con, $strSQL))
-			echo "ok";
-        else
-			echo "ko";
+
+        $sql = "SELECT * FROM participants WHERE email='".$email."'";
+        $result = $con->query($sql);
+
+        if ($result->num_rows == 0) {
+            // output data of each row
+            $strSQL = "INSERT INTO participants VALUES( null, '$name', '$email', '$tech', '$availability', '$age', 1)";
+            if(mysqli_query($con, $strSQL))
+                echo "ok";
+            else
+                echo "ko-insert";
+        } else {
+            echo "ko-email";
+        }
+
+        $con->close();
+
 	}
 
 ?>
