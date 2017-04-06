@@ -190,6 +190,30 @@
 	<div class="services">
 		<div class="container">
 			<div class="text-center">
+				<h2>L’Institut Culturel Roumain (ICR) à Paris</h2>
+			</div>
+			<div class="col-md-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+				<p>L’Institut Culturel Roumain (ICR) est une institution publique d’intérêt national, fondée en 2003 dont l’objectif principal est de promouvoir les valeurs de la culture roumaine dans ces différentes facettes: littérature, arts visuels, musique, théâtre ou cinéma à travers son réseau de 19 filiales développées à l’étranger.</p>
+				<p>Dès sa création en 2003, l’Institut Roumain à Paris est un diffuseur et promoteur majeur de la culture roumaine en France. l’ICR à présenté, entre autres, les œuvres des artistes Mircea Cantor, Mircea Caloian, Christian Paraschiv, les photographes  Stefan Maitec, Gabriela Lupu, Louis Monier, Nicu Ilfoveanu, des dramaturges et historiens d’art du spectacle Matei Visniec, Virgil Tanase, Georges Banu, Mirella Patureau, l’écrivain et pianiste Andrei Vieru, l’historien  et politologue Matei Cazacu.</p>
+				<p>L’ICR assure la présence roumaine au Livre Paris. Organise la Semaine du cinéma roumain à Paris, Les Rencontres Internationales Georges Enesco, participe à l’édition parisienne du Tour Européen Eurochanel de courts métrages et régulièrement au festival de Cannes, au FICEP, à la Tournée Stradivarius.</p>
+
+			</div>
+			<div class="col-md-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+				<p>La bibliothèque de l'Institut est la seule bibliothèque publique roumaine en France. Elle contient un fonds d'environ 15 000 volumes, parmi lesquels figurent de nombreuses traductions françaises de littérature, de poésie et de théâtre roumain, ainsi que des albums d'art, des ouvrages de référence en histoire et en histoire de l'art, des CD de musique, des cassettes vidéo (VHS) et des DVD.</p>
+				<p>L’Institut culturel roumain collabore avec des partenaires français comme le Centre Pompidou,  le Musée de l’Armée, le Musée du Judaïsme, INHA, Centquatre, Fondation Francès. Situé au 1, rue de l’Exposition au VII arrondissement de Paris, l’ICR côtoie l’Ambassade de Roumanie en France (Palais de Béhague), le Champs de Mars, le  Musée du Quai de Branly, Palais de Tokyo, Musée d’art Moderne de la Ville de Paris, Fondation Gulbenkian, Centre culturel Chinois.</p>
+				<p>L’Institut a sa propre galerie d’exposition et une salle de conférence. <br /> L’Institut Culturel Roumain est ouvert de lundi à vendredi, de 10h à 13h et de 14h à18 h. L’entrée est libre. <br /> L’ICR envoie sa lettre info à plus de 5.000 abonnées et se amis FB sont plus de 6.000.</p>
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="services">
+		<div class="container">
+			<div class="text-center">
 				<h2>Participez aux nos cours et evenements</h2>
 			</div>
 			<div class="col-md-12 wow fadeInDown text-center text-uppercase" data-wow-duration="1000ms" data-wow-delay="300ms">
