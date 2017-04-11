@@ -41,7 +41,7 @@
 					<div class="menu">
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation"><a href="index.php" class="active">Accueil</a></li>
-							<li role="presentation"><a href="apropos.html">Apropos</a></li>
+							<li role="presentation"><a href="apropos.html">A propos</a></li>
 							<li role="presentation"><a href="cours.html">Cours</a></li>
 							<li role="presentation"><a href="evenements.html">Evenements</a></li>
 							<li role="presentation"><a href="contact.html">Contact</a></li>
